@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "pingchecker",
+	"version": "${version}",
+	"name": "PingChecker",
+	"description": "Client-side /checkping command to check other players' ping",
+	"authors": [
+		"Dewsmith"
+	],
+	"contact": {
+		"homepage": "https://github.com/dewsmith0/PingChecker",
+		"sources": "https://github.com/dewsmith0/PingChecker/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/pingchecker/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"io.github.dewsmith0.pingchecker.PingChecker"
+		]
+	},
+	"mixins": [
+		"pingchecker.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*",
+        "clientarguments": "*"
+	}
+}

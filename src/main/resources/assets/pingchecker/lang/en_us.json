@@ -1,0 +1,5 @@
+{
+  "pingchecker.success": "Ping of %1$s is %2$dms",
+  "pingchecker.error.not_found": "ERROR: Could not find player.",
+  "pingchecker.error.no_handler": "ERROR: Network handler unavailable."
+}
