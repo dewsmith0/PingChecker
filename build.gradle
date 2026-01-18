@@ -16,9 +16,11 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
-    maven {
-        url 'https://maven.xpple.dev/maven2'
-    }
+
+    // maven {
+    //    url 'https://maven.xpple.dev/maven2'
+    //}
+    // not needed anymore
 }
 
 dependencies {
@@ -30,8 +32,8 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
-    // clientarguments, used to provide client arguments (duh)
-    include modImplementation("dev.xpple:clientarguments:${project.clientarguments_version}")
+    // no longer required
+    //include modImplementation("dev.xpple:clientarguments:${project.clientarguments_version}")
 
 }
 
